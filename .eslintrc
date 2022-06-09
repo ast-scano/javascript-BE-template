@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["simple-import-sort", "import", "sonarjs"],
+  "extends": ["eslint:recommended", "prettier", "plugin:sonarjs/recommended"],
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": ["error"]
+      }
+    ],
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-const": "error",
+    "prefer-template": "error",
+    "prefer-destructuring": "warn",
+    "prefer-rest-params": "warn",
+    "prefer-spread": "warn",
+    "yoda": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "sonarjs/no-duplicate-string": "error",
+    "sonarjs/cognitive-complexity": "warn"
+  }
+}
